@@ -3,9 +3,9 @@ public class Trucks extends Vehicle {
 
 
 
-    public Trucks(String make,  String model, int regNo, String vehicleType){
+    public Trucks(int regNo, String make,  String model){
 
-       super( make, model, regNo, vehicleType);
+       super( make, model, regNo);
     }
 
 

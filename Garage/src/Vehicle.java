@@ -1,57 +1,61 @@
-public  class Vehicle{
+public abstract class Vehicle {
 
 
-     private    int regNo;
-        String make;
-        String model;
-public String vehicleType;
+    private int regNo;
+    private  String make;
+        private String model;
 
-    public Vehicle(String make, String model, int regNo, String vehicleType) {
+    public Vehicle(String make, String model, int regNo) {
 
         this.regNo = regNo;
         this.make = make;
         this.model = model;
-        this. vehicleType = vehicleType;
+
 
     }
 
-    public int getRegNo()
-    {
-return regNo;
-    }
-    public void setRegNo()
-    {
-        this.regNo = regNo;
+
+    public Vehicle() {
+
     }
 
-    public String getMake()
-    {
-        return make;
-    }
-
-    public void setMake(){
+    public void setMake(String make) {
         this.make = make;
 
     }
 
-        public String getModel()
-
-        {
-        return model;
-
-        }
-
+    public void setRegNo() {
+        this.regNo = regNo;
+    }
 
     public void setModel() {
 
         this.model = model;
     }
 
-    @Override
-    public String toString() {
-        return "Vehicle{}";
+    public String getModel()
+
+    {
+        return model;
+
     }
-}
+
+    //public String toString() {
+    //  return "Vehicle{}";
+    //}
+
+    public int getRegNo() {
+        return regNo;
+    }
+
+
+    public String getMake() {
+        return make;
+    }
+
+
+
+    }
 
 
 

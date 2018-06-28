@@ -5,7 +5,8 @@ public class Control {
 
         Garage b = new Garage();
 
-        System.out.println(b.chargeVe());
+    Garage.chargeVe();
+
     }
 
 
